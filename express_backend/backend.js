@@ -12,5 +12,5 @@ app.listen(3000, () => {
         apiKey: '2410d519-630c-4d87-ad89-402277d7d27f'
     });
 
-    console.log(`Server is running on 3000`);
+    console.log(`Server is running on 3001`);
 });
