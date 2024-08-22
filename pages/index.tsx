@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { Pinecone } from '@pinecone-database/pinecone';
+
 import NavBar from '../components/navbar';
 
 export default function Home() {
+  const pc = new Pinecone({ apiKey: '2410d519-630c-4d87-ad89-402277d7d27f' });
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-4xl font-bold mb-6">Rate My Professor</h1>

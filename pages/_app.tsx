@@ -5,9 +5,11 @@ import NavBar from '../components/navbar';
 
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps}>
-    <NavBar/>
-  </Component>;
+  return (
+    <div>
+        <NavBar/>
+        <Component {...pageProps}></Component>
+    </div>);
 }
 
 export default App;
